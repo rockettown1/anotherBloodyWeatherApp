@@ -26,7 +26,7 @@ func GetLocation(query string) <-chan Location {
 
 	go func() {
 		defer close(c)
-		apiKey := //your key here
+		apiKey := "pk.eyJ1Ijoicm9ja2V0dG93biIsImEiOiJjanQ2ZmEyZnowZjloNDRtd2VtemR3dzZmIn0.JLgxwoeoCASsZ8WDYI3-5A"
 
 		locationString := url.PathEscape(query)
 

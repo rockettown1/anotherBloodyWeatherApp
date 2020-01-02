@@ -25,7 +25,7 @@ func GetWeather(lat float64, lng float64) <-chan Weather {
 
 	go func() {
 		defer close(c)
-		apiKey := //your key here
+		apiKey := "fb807f90bf55dc3b7a7905299f3e12d6"
 		url := fmt.Sprintf("https://api.darksky.net/forecast/%v/%v,%v", apiKey, lat, lng)
 		data := restclient.Get(url)
 		var weatherResponse Weather
